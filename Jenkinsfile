@@ -4,7 +4,7 @@ node("master"){
     stage('Testing'){
         sh """
         chmod a+x run.py
-        ./run.py
+        python run.py
         """
     }
     stage('archive'){
